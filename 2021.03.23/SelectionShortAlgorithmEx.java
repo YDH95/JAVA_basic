@@ -1,20 +1,20 @@
-package ¾Ë°í¸®Áò_¿¹Á¦;
+package ì•Œê³ ë¦¬ì¦˜_ì˜ˆì œ;
 
 public class SelectionShortAlgorithmEx {
 
 	public static void main(String[] args) {
-		// ÀÚ·á±¸Á¶ ÁØºñ ´Ü°è=> ¹è¿­ °´Ã¼ »ı¼º
-		int[] num = { 30, 50, 10, 40, 20 }; //¹è¿­ÀÇ ÃÊ±â»óÅÂ
+		// ìë£Œêµ¬ì¡° ì¤€ë¹„ ë‹¨ê³„=> ë°°ì—´ ê°ì²´ ìƒì„±
+		int[] num = { 30, 50, 10, 40, 20 }; //ë°°ì—´ì˜ ì´ˆê¸°ìƒíƒœ
 
-		// ÇÊ¿äÇÑ º¯¼ö ¼³Á¤
-		int temp; // ÀÓ½Ã ±â¾ï Àå¼Ò
-		//int n = 5; // ¹è¿­ÀÇ µ¥ÀÌÅÍ °¹¼ö°¡ 5°³
+		// í•„ìš”í•œ ë³€ìˆ˜ ì„¤ì •
+		int temp; // ì„ì‹œ ê¸°ì–µ ì¥ì†Œ
+		//int n = 5; // ë°°ì—´ì˜ ë°ì´í„° ê°¯ìˆ˜ê°€ 5ê°œ
 
-		// Ã³¸® ´Ü°è => ¼±ÅÃ Á¤·Ä ¾Ë°í¸®Áò Àû¿ë
-		for (int i = 0; i < num.length; i++) { 
-			//System.out.println(i + "¹Û");
+		// ì²˜ë¦¬ ë‹¨ê³„ => ì„ íƒ ì •ë ¬ ì•Œê³ ë¦¬ì¦˜ ì ìš©
+		for (int i = 0; i < num.length - 1; i++) { 
+			//System.out.println(i + "ë°–");
 			for (int j = i + 1; j < num.length; j++) {
-				//System.out.print(j + "¾È");
+				//System.out.print(j + "ì•ˆ");
 				if (num[i] > num[j]) {
 					temp = num[i];
 					num[i] = num[j];
@@ -22,7 +22,7 @@ public class SelectionShortAlgorithmEx {
 				}
 			}
 		}
-		System.out.println("<<< Á¤·ÄµÈ µ¥ÀÌÅÍ >>>");
+		System.out.println("<<< ì •ë ¬ëœ ë°ì´í„° >>>");
 		for (int k = 0; k < num.length; k++) {
 			System.out.print(num[k] + " ");
 		}
