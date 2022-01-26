@@ -44,41 +44,41 @@ public static void main(String[] args) {
 		System.out.print("[" + arr[i] + "]"); // [4][15][17][19][23][33]
 	}
 ====================================버블정렬 흐름=============================================
-for (int i = 0; i < arr.length; i++) {
-	for (int j = i + 1; j < arr.length; j++) {
+	for (int i = 0; i < arr.length; i++) {
+		for (int j = i + 1; j < arr.length; j++) {
 
-		System.out.println("arr[i]: " + arr[i] + ", " +"arr[j]: " + arr[j]);
-		System.out.println(arr[i] > arr[j]);
+			System.out.println("arr[i]: " + arr[i] + ", " +"arr[j]: " + arr[j]);
+			System.out.println(arr[i] > arr[j]);
+		}
 	}
-}
-arr[i]: 4, arr[j]: 23
-false
-arr[i]: 4, arr[j]: 33
-false
-arr[i]: 4, arr[j]: 15
-false
-arr[i]: 4, arr[j]: 17
-false
-arr[i]: 4, arr[j]: 19
-false
-arr[i]: 23, arr[j]: 33
-false
-arr[i]: 23, arr[j]: 15
-true
-arr[i]: 23, arr[j]: 17
-true
-arr[i]: 23, arr[j]: 19
-true
-arr[i]: 33, arr[j]: 15
-true
-arr[i]: 33, arr[j]: 17
-true
-arr[i]: 33, arr[j]: 19
-true
-arr[i]: 15, arr[j]: 17
-false
-arr[i]: 15, arr[j]: 19
-false
-arr[i]: 17, arr[j]: 19
-false
+	arr[i]: 4, arr[j]: 23
+	false
+	arr[i]: 4, arr[j]: 33
+	false
+	arr[i]: 4, arr[j]: 15
+	false
+	arr[i]: 4, arr[j]: 17
+	false
+	arr[i]: 4, arr[j]: 19
+	false
+	arr[i]: 23, arr[j]: 33
+	false
+	arr[i]: 23, arr[j]: 15
+	true
+	arr[i]: 23, arr[j]: 17
+	true
+	arr[i]: 23, arr[j]: 19
+	true
+	arr[i]: 33, arr[j]: 15
+	true
+	arr[i]: 33, arr[j]: 17
+	true
+	arr[i]: 33, arr[j]: 19
+	true
+	arr[i]: 15, arr[j]: 17
+	false
+	arr[i]: 15, arr[j]: 19
+	false
+	arr[i]: 17, arr[j]: 19
+	false
 	
