@@ -1,0 +1,9 @@
+// 정수 출력하기
+BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+int a = br.read(); // 아스키 코드로 출력됨
+int b = Integer.parseInt(br.readLine());
+
+
+System.out.println(a + 1);
+System.out.println(b + 1);
