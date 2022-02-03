@@ -1,8 +1,8 @@
-// 정수 출력하기
+// 정수 출력하기 
 BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 int a = br.read(); // 아스키 코드로 출력됨
-int b = Integer.parseInt(br.readLine());
+int b = Integer.parseInt(br.readLine()); // 정수로 변환
 
 
 System.out.println(a);
