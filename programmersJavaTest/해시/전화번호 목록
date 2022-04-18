@@ -1,0 +1,28 @@
+package java_study;
+
+import java.util.Arrays;
+import java.util.HashMap;
+
+public class 전화번호목록 {
+	
+	public static void main(String[] args) {
+		String[] phone_book = {"119", "97674223", "1195524421"};
+		HashMap<String, Integer> map = new HashMap<String, Integer>();
+		
+		Arrays.sort(phone_book);
+		
+		for (int i = 0; i < phone_book.length; i++) {
+			System.out.println(phone_book[i]);
+			map.put(phone_book[i], i);
+		}
+		
+		for (int i = 0; i < phone_book.length; i++) {
+			for (int j = 0; j < phone_book[i].length(); j++) {
+				if (map.containsKey(phone_book[i].substring(0, j))) {
+					System.out.println("false");
+				}
+			}
+		}
+		System.out.println("true");
+	}
+}
