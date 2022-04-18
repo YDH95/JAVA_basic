@@ -1,0 +1,31 @@
+package year22_study.프로그래머스;
+
+import java.util.*;
+
+public class 위장 {
+    public static void main(String[] args) {
+        //		String[][] clothes = {{"yellowhat", "headgear"}, {"bluesunglasses", "eyewear"}, {"green_turban", "headgear"}};
+                String[][] clothes = {{"crowmask", "face"}, {"bluesunglasses", "face"}, {"smoky_makeup", "face"}};
+                int answer = 1;
+                
+                HashMap<String, Integer> map = new HashMap<>();
+                
+                 for (String[] clothe : clothes) {
+                     String type = clothe[1];
+                     map.put(type, map.getOrDefault(type, 0)+1);
+                                     // getOrDefault(값, 기본값) 값이 있으면 1 더한다
+                                     // {eyewear=1, headgear=2}
+                }
+                 
+                Iterator<Integer> it = map.values().iterator();
+                
+                while(it.hasNext()) {
+                    
+                    answer *= it.next().intValue() + 1;
+                }
+                
+                System.out.println(answer - 1); // 아무것도 안입었을 때를 제외 하기위해 - 1
+                
+            }
+}
+
